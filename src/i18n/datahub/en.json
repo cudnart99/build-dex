@@ -1,0 +1,511 @@
+{
+  "marketplace": {
+    "header": {
+      "text1": "DATA MARKETPLACE",
+      "text2": "A Digital Marketplace",
+      "text3": "for Healthcare Data",
+      "text4": "The community of buying and selling healthcare data is interactive between buyers and sellers, healthcare records purchased and sold will be verified and moderated by doctors before posted. All data will be scruntinized and any fraud detected will be hefty fined.",
+      "txt-total-data": "data",
+      "txt-total-transactions": "transctions/day",
+      "txt-total-users": "users",
+      "howItWork": {
+        "content": "How it works",
+        "item1": "Connect",
+        "item2": "Wallet",
+        "item3": "Data",
+        "item4": "Migration",
+        "item5": "Marketplace"
+      }
+    },
+    "body": {
+      "title": "Marketplace",
+      "button": "Click here to explore",
+      "result": "Result",
+      "btn-clear-all": "Clear all"
+    },
+    "filter": {
+      "explore": "Explore",
+      "favorites": "Favorites",
+      "popular": "Popular",
+      "sort-by": "Sort by",
+      "price-asc": "Price low to high",
+      "price-desc": "Price high to low",
+      "recently-listed": "Recently listed",
+      "recently-granted": "Recently granted",
+      "sidebar-filter-status": "Status",
+      "buy-now": "Buy Now",
+      "on-auction": "On Auction",
+      "sidebar-filter-token": "Token",
+      "max": "Max",
+      "min": "Min",
+      "sidebar-filter-ICD": "ICD-10",
+      "sidebar-filter-medical": "Medical specialty"
+    }
+  },
+  "asset-item": {
+    "notify": {
+      "buyer-accuse-success": "Your report has been submited and will be processed in 24h.",
+      "buyer-accuse-error": "Accuse fail!",
+      "buyer-accuse-error-content": "Hash-key provided by the owner is correct; thus, your report is rejected",
+      "handle-submit-success": "Deposit success!",
+      "handle-submit-success-2": "Continue request",
+      "handle-submit-fail": "Deposit fail!",
+      "handle-submit-fail-ok": "Try Again",
+      "handle-submit-fail-cancel": "Cancel",
+      "handle-submit-error": "Please fill in amount to deposit!",
+      "buyer-request-error": "Request fail!",
+      "buyer-request-error-2": "Please check your network connection",
+      "random-waiting-modal": "Waiting for blockchain processing"
+    },
+    "component": {
+      "granted": "granted",
+      "sorry": "we're sorry",
+      "btn-list-data": "List data",
+      "btn-report-data": "Report data",
+      "report-data-title": "Confirm Report",
+      "report-data-content": "Are you sure you want to report this asset's issues?",
+      "btn-requested": "Requested",
+      "btn-request-access": "Request access",
+      "base-modal": {
+        "title": "Make deposit",
+        "title2": "Your purchase has processed",
+        "txt": "Your balance is low!",
+        "txt2": "You need to deposit at least",
+        "txt3": "IVI to complete your purchase",
+        "txt4": "WALLET",
+        "txt5": "DATAHUB",
+        "txt6": "Make deposit into smartcontract",
+        "txt7": "You have just shared your",
+        "txt8": "successfully.",
+        "txt9": "If there is no claim from the data recipient within 24 hours, you are eligible to withdraw your token",
+        "txt10": "Data ID",
+        "txt11": "Transation hash",
+        "currency-input": "Enter amount",
+        "submit": "Return to Datahub"
+      }
+    }
+  },
+  "assetDetail": {
+    "btn1": "Set new price",
+    "btn2": "List",
+    "btn3": "Report data",
+    "btn4": "Requested",
+    "btn5": "Request access",
+    "txt1": "Deposit success!",
+    "txt2": "Continue request",
+    "txt3": "Deposit fail!",
+    "txt4": "Try Again",
+    "txt5": "Cancel",
+    "txt6": "Please fill in amount to deposit!",
+    "txt7": "Request fail!",
+    "txt8": "Please check your network connection",
+    "txt9": "Owner granted access on",
+    "txt10": "Show data on marketplace",
+    "txt11": "Medical specialty",
+    "txt12": "Medical unit",
+    "txt13": "Classification of Diseases",
+    "txt14": "Topics included",
+    "txt15": "Detail data",
+    "txt16": "Locked data",
+    "txt17": "Please request access to the data and wait for the owner to confirm",
+    "txt18": "Your report has been submited and will be processed in 24h!",
+    "txt19": "Accuse fail!",
+    "txt20": "Hash-key provided by the owner is correct; thus, your report is rejected",
+    "txt21": "Report successfully",
+    "txt22": "Success and wait for system response",
+    "txt23": "Reason fail and retry report",
+    "txt24": "Report failed",
+    "txt25": "Waiting for processing transaction",
+    "txt26": "Make deposit",
+    "txt27": "Your balance is low!",
+    "txt28": "You need to deposit at least",
+    "txt29": "IVI to complete your purchase",
+    "txt30": "Make deposit into smartcontract",
+    "txt31": "Enter amount",
+    "txt32": "Deposit",
+    "txt33": "Your purchase has processed",
+    "txt34": "Return to Datahub",
+    "txt35": "You have just shared your",
+    "txt36": "successfully.",
+    "txt37": "If there is no claim from the data recipient within 24 hours, you are eligible to withdraw your token.",
+    "txt38": "Price",
+    "txt39": "Owner",
+    "txt40": "Status",
+    "txt41": "Complete",
+    "txt42": "Transation hash",
+    "Wallet": "WALLET",
+    "Datahub": "DATAHUB",
+    "locked": "Locked",
+    "balance": "Balance"
+  },
+  "DepositPage": {
+    "token-description": "IVI token",
+    "handleSubmit-warning": "Deposit must have at least 0.066 IVI!",
+    "handleSubmit-error": "Please fill in amount to",
+    "wallet": "Wallet",
+    "datahub": "Datahub",
+    "txt": "***Make deposit into smartcontract",
+    "txt1": "***Make withdraw into wallet",
+    "txt2": "Waiting for metamask processing",
+    "enter-amount": "Enter amount"
+  },
+  "Profile": {
+    "title": "DashBoard",
+    "title1": "Collected",
+    "title2": "Request",
+    "title3": "History",
+    "title4": "Favorites",
+    "title5": "Status",
+    "title6": "Token",
+    "title7": "Price",
+    "title8": "Profile",
+    "show-more": "More filter",
+    "show-less": "Show less"
+  },
+  "DashBoard": {
+    "label": "Purchase",
+    "label1": "Sales",
+    "label2": "Deposits",
+    "label3": "Withdrawals",
+    "label4": "Type",
+    "label5": "All",
+    "pieData-listed": "Listed",
+    "pieData-owner": "Owner",
+    "pieData-granted": "Granted",
+    "pieData-reported": "Reported",
+    "txt": "Total Assets",
+    "txt2": "Token earned",
+    "txt3": "TOKENS VOLATILITY",
+    "txt4": "REALTIME",
+    "tag": "Type: "
+  },
+  "collected": {
+    "Listed": "Listed",
+    "Owned": "Owned",
+    "Granted": "Granted",
+    "Reported": "Reported",
+    "label": "Filter by status",
+    "option-1": "All",
+    "option-2": "Active",
+    "option-3": "Inactive",
+    "result": "Result"
+  },
+  "history": {
+    "type": "Type",
+    "deposit": "Deposit",
+    "all": "All",
+    "completed": "Completed",
+    "failed": "Failed",
+    "rejected": "Rejected",
+    "time": "Time",
+    "currency": "Currency",
+    "amount": "Amount",
+    "status": "Status",
+    "processing": "Processing",
+    "accused": "Accused",
+    "withdraw": "Withdraw",
+    "purchase": "Purchase",
+    "price": "Price",
+    "sales": "Sales",
+    "listing": "Listing"
+  },
+  "requests": {
+    "title-1": "Data ID",
+    "title-2": "Made to",
+    "title-4": "Expiration",
+    "txt": "Awaiting confirmation",
+    "Rejected": "Rejected",
+    "Accepted": "Accepted",
+    "Reported": "Reported",
+    "Expired": "Expired",
+    "Accused": "Accused",
+    "error-content": "Reject fail!",
+    "error-content-1": "Please check your network connection",
+    "error-content-2": "Accept fail!",
+    "MultipleButtonSelect-option-1": "Request received",
+    "MultipleButtonSelect-option-2": "Request made"
+  },
+  "component": {
+    "searchByName": "Search by name...",
+    "price": "Price",
+    "balance": "Balance",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "owner": "Owner",
+    "status": "Status",
+    "complete": "Complete",
+    "cancel": "Cancel",
+    "share": "Share",
+    "accept": "Accept",
+    "description": "Description",
+    "retry": "Retry",
+    "report": "Report",
+    "profile": "Profile",
+    "result": "Result",
+    "DSDV": "Danh sách dịch vụ",
+    "TTHC": "Thông tin hành chính",
+    "TTBA": "Tóm tắt bệnh án",
+    "KQK": "Kết quả khám",
+    "KQXN": "KQ xét nhiệm",
+    "CDHA": "CDHA & TDCN",
+    "PT&TT": "Phẫu thuật/ Thủ thuật",
+    "medicine": "Thuốc",
+    "data": "Data",
+    "clear-all": "Clear all",
+    "from": "From",
+    "to": "To",
+    "weeks": "weeks",
+    "months": "months",
+    "year": "year",
+    "soft-by": "Soft by",
+    "timeFrom": "Time: From date",
+    "timeTo": "To date",
+    "confirm": "Confirm"
+  },
+  "modal": {
+    "ICD10DropDownFilter": {
+      "show-less": "Show less",
+      "show-more": "Show more"
+    },
+    "PriceRange": {
+      "error-text": "Minimum must be less than maximum",
+      "btn-apply": "Apply"
+    },
+    "FilterDrawerDatahub": {
+      "header": "Filter by",
+      "clear": "Clear"
+    },
+    "RandomWaitingModal": {
+      "txt": "To approve IVIRSE to trade this asset, you must first complete a fee (plus gas) transaction. Confirm it in your wallet and keep this tab open! Read more",
+      "txt2": "here",
+      "txt3": "Waiting for blockchain processing..."
+    },
+    "ModalChangePrice": {
+      "header": "Set a new listing price",
+      "txt": "Change price success!",
+      "txt2": "Change price fail!",
+      "txt3": "Name",
+      "txt4": "Price",
+      "txt5": "Set a new price"
+    },
+    "ListingModal": {
+      "title": "Data information",
+      "title2": "Sales information",
+      "title3": "List data",
+      "title4": "Save draft",
+      "title5": "List",
+      "draft-success": "Save draft success!",
+      "list-success": "Listing success!",
+      "list-fail": "Listing fail!",
+      "list-fail-content": "Listing fails, please fill in your missing information",
+      "txt": "Previous",
+      "txt2": "Next",
+      "txt3": "Report successfully",
+      "txt4": "Success and wait for system response",
+      "txt5": "Reason fail and retry report",
+      "txt6": "Report failed",
+      "txt7": "Cancel",
+      "txt8": "Retry",
+      "txt9": "Waiting for blockchain processing"
+    },
+    "ModalNotification": {
+      "ok": "Ok",
+      "cancel": "Cancel"
+    },
+    "DataInfoStep": {
+      "name": "Name",
+      "txt": "Your assset name must not contain special symbols and characters and length between 6 and 125.",
+      "txt2": "Medical unit",
+      "txt3": "Your asset medical unit must length between 6 and 125.",
+      "txt4": "Medical specialties",
+      "txt5": "Classification of Diseases",
+      "txt6": "Choose",
+      "txt7": "Topics included",
+      "txt8": "Description",
+      "txt9": "Description your data"
+    },
+    "SaleInfoStep": {
+      "name": "Name",
+      "txt": "Price",
+      "txt2": "I checked all content",
+      "txt3": "You need to double-check the content and warn the buyer (if any) in case the profile is partially missing. Ivirse will not be responsible for reports received from buyers."
+    },
+    "ModalConfirmRequest": {
+      "header": "Request access",
+      "txt1": "Cancel",
+      "txt2": "Continue",
+      "txt3": "Are you sure you want to request data?",
+      "txt4": "After choosing Continue, please wait for the owner to accept this requisition within 24 hours.",
+      "txt5": "You are suggested to double-check the information in the description.",
+      "txt6": "IVIRSE will not be responsible for the information of the data after the purchase completion.",
+      "txt7": "I checked all content"
+    },
+    "ModalSwap": {
+      "header": "Choose token"
+    },
+    "AssetOptions": {
+      "txt1": "Set a new price",
+      "txt2": "Display on market"
+    },
+    "ModalWaitingConfirm2": {
+      "header": "Waiting for processing transaction",
+      "txt": "Are you sure you want to report this asset's issues?"
+    },
+    "BaseModal": {
+      "cancel": "Cancel",
+      "ok": "Ok"
+    },
+    "ConfirmDeactiveModal": {
+      "header": "Confirm deactive data",
+      "txt1": "Are you sure you want to deactive this data on marketplace ? ",
+      "txt2": "It will block this data visible on marketplace! You can restore access by reactivating this data later"
+    },
+    "ModalReport": {
+      "header": "Report data",
+      "txt": "Image",
+      "txt2": "The report will be deducted gas fee for the system, users should carefully check the information when clicking submit",
+      "txt3": "I checked",
+      "mess-success": "Upload successfully!",
+      "mess-info": "You 've reach total 5 files uploaded",
+      "mess-error": "You can upload only 5 files which less than 20MB!",
+      "mess-error1": "You can only upload image files!",
+      "add-item": "Add item"
+    },
+    "RecordDetail": {
+      "txt1": "Khám SK Hợp đồng",
+      "txt2": "Ngoại trú"
+    },
+    "CDHA": {
+      "btn1": "Xem ảnh",
+      "txt": "Mô tả",
+      "txt2": "Kết luận"
+    },
+    "Medicine": {
+      "title": "STT",
+      "title2": "Tên thuốc",
+      "title3": "Số lượng",
+      "title4": "Bác sĩ"
+    },
+    "MedicResult": {
+      "txt": "Phòng khám:",
+      "txt1": "Khoa:",
+      "txt2": "Số điện thoại khoa:",
+      "txt3": "Thông tin khám",
+      "txt4": "Tiền sử",
+      "txt5": "Chi tiết khám",
+      "txt6": "Kết luận",
+      "txt7": "Chẩn đoán sơ bộ",
+      "txt8": "Chẩn đoán bệnh",
+      "txt9": "Chẩn đoán khác",
+      "txt10": "Lời dặn"
+    },
+    "ProfileRecord": {
+      "txt": "GT, tuổi",
+      "txt1": "Mã NB",
+      "txt2": "Mã HS",
+      "men": "Nam",
+      "women": "Nữ"
+    },
+    "ServiceList": {
+      "txt": "TG khám",
+      "txt1": "Dịch vụ đã thực hiện",
+      "txt2": "Tổng chi phí",
+      "txt3": "Chi phí ưu đãi"
+    },
+    "Surgery": {
+      "txt": "Cách thức phẫu thuật",
+      "txt1": "Chuẩn đoán ban đầu",
+      "txt2": "kết luận"
+    },
+    "TestResult": {
+      "txt": "Hóa sinh",
+      "txt1": "Huyết học",
+      "txt2": "Vi sinh - Ký sinh trùng",
+      "txt3": "Vi sinh",
+      "txt4": "Xét nghiệm khác",
+      "title": "Tên xét nghiệm",
+      "title1": "Kết quả",
+      "title2": "Đơn vị",
+      "title3": "Giá trị tham chiếu"
+    },
+    "RecordDetailNoitru": {
+      "title1": "Profile",
+      "title2": "Danh sách dịch vụ",
+      "title3": "Thông tin hành chính",
+      "title4": "Tóm tắt bệnh án",
+      "txt1": "Khám SK nội trú"
+    },
+    "Administrative": {
+      "txt": "Địa chỉ cư trú",
+      "txt1": "Số CMT/ Số CCCD/ Số HC",
+      "txt2": "Khoa",
+      "txt3": "Ngày ra viện",
+      "txt4": "Ngày vào viện",
+      "txt5": "Mã bệnh án",
+      "txt6": "Số thẻ bảo hiểm y tế"
+    },
+    "MedicalRecordNoitru": {
+      "txt": "Đã thanh toán viện phí",
+      "txt1": "Mới",
+      "txt2": "Chuyển khoa",
+      "txt3": "Trong viện",
+      "txt4": "Hẹn điều trị và đã thanh toán",
+      "txt5": "Đã ra viện và chưa thanh toán",
+      "txt6": "Điều trị ngoại trú",
+      "txt7": "Hẹn điều trị và chưa thanh toán",
+      "txt8": "Trạng thái người bệnh",
+      "txt9": "Quá trình bệnh lý và diễn biến lâm sàng",
+      "txt10": "óm tắt khám lâm sàng và kết quả cận lâm sàng có giá trị chẩn đoán",
+      "txt11": "Chẩn đoán khi ra viện",
+      "txt12": "Chẩn đoán vào viện",
+      "txt13": "Chẩn đoán ra viện khác",
+      "txt14": "Chẩn đoán ra viện chi tiết",
+      "txt15": "Lời dặn bác sĩ",
+      "txt16": "Phương pháp điều trị",
+      "txt17": "Quá trình bệnh lý diễn biến cận lâm sàng",
+      "txt18": "Tóm tắt kết quả cận lâm sàng",
+      "txt19": "Hướng điều trị",
+      "txt20": "Kết quả điều trị",
+      "txt21": "Hình thức ra viện"
+    },
+    "ServiceListNoitru": {
+      "txt": "TG khám",
+      "txt1": "Dịch vụ đã thực hiện",
+      "txt2": "Tổng chi phí",
+      "tx3": "Chi phí sau ưu đãi"
+    },
+    "FilterDrawerCollected": {
+      "buy": "Buy now",
+      "auction": "On Auction",
+      "recently": "Recently granted",
+      "price-range": "Price range",
+      "title": "Status",
+      "title2": "Currencies"
+    },
+    "modalConfirmRequest2": {
+      "header": "Confirm request",
+      "accept": "Accept",
+      "text-1": "You have a request for this asset",
+      "text-2": "Requester",
+      "text-3": "Please Accept this request in",
+      "text-4": "If there is no confirmation, this transaction will be cancelled."
+    },
+    "modalSuccessNoti": {
+      "header": "Completed",
+      "done": "Done",
+      "text1": "Ayy! You just sold",
+      "text2": ". It’s been confirmed on the blockchain!",
+      "text3": "Data ID",
+      "text4": "Price",
+      "text5": "Requester",
+      "text6": "Status",
+      "text7": "Completed",
+      "text8": "Transaction Hash"
+    },
+    "modalWaitingConfirm": {
+      "header": "Waiting for processing transaction",
+      "text1": "To proceed this transaction, you are required to complete a fee (add-on gas) transaction. Please confirm it on your wallet and keep this tab open until the transaction is completed.",
+      "text2": "Waiting for blockchain confirmation..."
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.asset-options-btn {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 240px;
+  padding: 12px;
+  .ant-btn {
+    border: none;
+    outline: none;
+
+    padding-left: 0px;
+  }
+
+  .ant-btn,
+  .display-option {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+  .display-option .ant-switch {
+    margin-left: 4px;
+  }
+  .ant-switch-checked {
+    background-color: #007817;
+  }
+}
