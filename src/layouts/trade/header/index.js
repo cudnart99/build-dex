@@ -153,7 +153,7 @@ const Header = (props) => {
           );
         })}
       </div>
-      <NotificationsBell />
+      {/* <NotificationsBell /> */}
       <div className="info-account">
         <div className="network">
           <div className="dot"></div>

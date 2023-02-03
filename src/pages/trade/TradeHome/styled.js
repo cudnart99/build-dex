@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeStyled = styled.div`
-@media (max-width:576px) {
+  @media (max-width: 576px) {
     .big-text {
       div:first-child {
         font-size: 40px;
@@ -14,37 +14,39 @@ export const HomeStyled = styled.div`
       }
     }
     .small-text {
-      font-size: 14px!important;
+      font-size: 14px !important;
       margin-bottom: 0px;
     }
     .home-page__header {
       height: 80px;
     }
     .home-page__footer-right {
-      margin-top:12px;
+      margin-top: 12px;
       div {
-        font-size: 16px!important;
+        font-size: 16px !important;
       }
     }
   }
+
+  overflow-y: scroll;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding-left: 5%;
   padding-right: 5%;
   .connect-wallet-btn {
-      background: radial-gradient(
-          96.92% 1534.99% at 95.38% 91.84%,
-          #915fcd 7.32%,
-          #ae5297 100%
-        )
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-      border-radius: 20px;
-      border: none;
-      span {
-        color: white;
-        margin-left: 4px;
-      }
+    background: radial-gradient(
+        96.92% 1534.99% at 95.38% 91.84%,
+        #915fcd 7.32%,
+        #ae5297 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 20px;
+    border: none;
+    span {
+      color: white;
+      margin-left: 4px;
     }
+  }
   .home-page__background {
     img {
       width: 100%;
@@ -56,7 +58,6 @@ export const HomeStyled = styled.div`
       right: 0;
       z-index: -1;
       /* opacity: 0.7; */
-
     }
     #layer-1 {
       z-index: -1;
@@ -72,8 +73,8 @@ export const HomeStyled = styled.div`
     }
   }
   .home-page__header {
-    height: 150px;
-    @media screen and (min-width:460px ) and (max-height: 450px){
+    height: 120px;
+    @media screen and (min-width: 460px) and (max-height: 450px) {
       height: 65px;
     }
     .logo-home {
@@ -84,41 +85,13 @@ export const HomeStyled = styled.div`
         font-size: 100px;
       }
     }
-    
   }
-
+  /* overflow-y: scroll; */
   .home-page__body {
-    @media screen and (min-width:460px ) and (max-height: 450px){
-      margin-top: 0;
-    }
-    margin-top: 20px;
-    .home-page__body-content {
-      width: 50%;
-      .big-text {
-        @media screen and (min-width:460px ) and (max-height: 450px){
-          &-up{
-            line-height: normal;
-            font-size: 40px;
-          }
-          &-down{
-            line-height: normal;
-            font-size: 25px;
-          }
-        }
-      }
-      .small-text {
-        padding: 16px 0px;
-        color: white;
-        font-size: 16px;
-        font-weight: 400;
-        @media screen and (min-width:460px ) and (max-height: 450px){
-          padding: 0;
-        }
-      }
-    }
   }
 
   .home-page__footer {
+    z-index: 1000;
     height: 50px;
     position: absolute;
     bottom: 40px;
@@ -128,7 +101,7 @@ export const HomeStyled = styled.div`
     @media screen and (max-width: 576px) {
       height: auto;
     }
-    @media screen and (min-width:460px ) and (max-height: 450px){
+    @media screen and (min-width: 460px) and (max-height: 450px) {
       display: flex;
       bottom: 0;
     }
@@ -153,6 +126,4 @@ export const HomeStyled = styled.div`
       }
     }
   }
-
-  
 `;

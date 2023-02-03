@@ -29,6 +29,7 @@ export const GlobalIconsWrapper = styled.div`
   margin-top: 25px;
   .testclass {
     /* margin-top:100px; */
+    z-index: 1000;
     width: 95% !important;
     bottom: 0px;
     background: transparent;

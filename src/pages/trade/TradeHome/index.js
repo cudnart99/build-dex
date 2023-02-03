@@ -171,42 +171,6 @@ const TradeHome = ({ history }) => {
         </div>
         <div className="home-page__body">
           <Welcome />
-          {/* <div className="home-page__body-content">
-            <div className="big-text">
-              <h1>IVIRSE</h1>
-              <h1>DigiHealth Ecosystem</h1>
-              <img
-                src={require("@images/trade/home-page-big-text.png")}
-                alt="big text"
-              />
-              <LinearText
-                title={"IVIRSE"}
-                className="big-text-up"
-                fontSize={screenWidth > 576 ? "80px" : "50px"}
-                lineHeight={screenWidth > 576 ? "82px" : "52px"}
-                style={{ marginBottom: "0px" }}
-              />
-              <LinearText
-                title={"DigiHealth Ecosystem"}
-                className="big-text-down"
-                fontSize={screenWidth > 576 ? "40px" : "30px"}
-                lineHeight="45px"
-              />
-            </div>
-            <p className="small-text">
-              IVIRSE is creating a digihealthcare universal that provides an
-              innovative perspective for individuals via evolving digital health
-              ecosystems.
-            </p>
-            <div className="button-group d-flex">
-              <TradeButton
-                icon={<VideoIcon />}
-                content={"Watch video"}
-                type="transparent_white"
-                onClick={handleShowVideoModal}
-              />
-            </div>
-          </div> */}
         </div>
         <div
           className={
@@ -214,31 +178,10 @@ const TradeHome = ({ history }) => {
               ? "home-page__footer d-flex justify-content-end"
               : "home-page__footer"
           }
-        >
-          {/* <div className="home-page__footer-right">
-            <LinearText
-              title={
-                <span>
-                  Better Healthcare
-                  <br />
-                  from Digital Revolution
-                </span>
-              }
-              fontSize="20px"
-              lineHeight="24px"
-            />
-          </div> */}
-          {/* {screenWidth<576&&<Button
-            className="connect-wallet-btn d-flex align-items-center"
-            onClick={handleShowConnectModal}
-          >
-            <WalletIcon />
-            <span>Connect Wallet</span>
-          </Button>} */}
-        </div>
+        ></div>
       </HomeStyled>
       <ConnectWalletModal history={history} ref={connectWalletRef} />
-      <VideoModal ref={videoRef} />
+      {/* <VideoModal ref={videoRef} /> */}
       <ModalError
         title={<ConnectToWalletTitle textOption="error" />}
         ref={modalErrorRef}

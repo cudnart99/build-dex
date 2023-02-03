@@ -163,7 +163,7 @@ const DrawerHeader = (props) => {
               </NavLink>
             );
           })}
-          <div className="drawer-header-body-item" id="wallet-collapse">
+          {/* <div className="drawer-header-body-item" id="wallet-collapse">
             <Collapse
               expandIconPosition="end"
               bordered={false}
@@ -194,7 +194,7 @@ const DrawerHeader = (props) => {
                 </ul>
               </Panel>
             </Collapse>
-          </div>
+          </div> */}
         </div>
         <div className="footer-drawer">
           <div className="footer-drawer-icon">

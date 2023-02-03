@@ -35,6 +35,7 @@ export const TradeRouteWrapperStyled = styled.div`
 
   .wrapper-container {
     overflow-x: hidden;
+    /* overflow-x: scroll; */
     overflow-y: scroll;
     scroll-behavior: smooth;
     margin-top: calc(var(--trade-header-height));
