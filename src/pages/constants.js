@@ -11,6 +11,7 @@ const Vesting = React.lazy(() => import("@pages/trade/vesting"));
 const Staking = React.lazy(() => import("@pages/trade/staking"));
 const TradeCommunity = React.lazy(() => import("@pages/trade/community"));
 const AdminCommunity = React.lazy(() => import("@pages/trade/AdminCommunity"));
+
 const DataHub = React.lazy(() => import("@pages/trade/datahub"));
 const DataHubAssetDetail = React.lazy(() =>
   import("@pages/trade/datahub/AssetDetail")
@@ -28,8 +29,10 @@ const ERC20Management = React.lazy(() =>
   import("@pages/trade/ERC20Management")
 );
 /* AI demo route */
-const AiDemoPage = React.lazy(() => import("@pages/trade/datahub/AiDemo"));
+// const AiDemoPage = React.lazy(() => import("@pages/trade/datahub/AiDemo"));
 /**--------------- */
+/* DEX demo route */
+const Swap = React.lazy(() => import("@pages/trade/DEX/Swap"));
 
 const TradePage = (Component) => (props) => {
   return (
@@ -42,6 +45,12 @@ const TradePage = (Component) => (props) => {
 };
 
 export const trade_routes = [
+  {
+    component: TradePage(Swap, []),
+    accessRoles: [],
+    path: ["/swap"],
+    exact: true,
+  },
   {
     component: TradePage(TradeTutorial, []),
     accessRoles: [],
@@ -61,36 +70,36 @@ export const trade_routes = [
     path: ["/contract"],
     exact: true,
   },
-  {
-    component: TradePage(Balances, []),
-    accessRoles: [],
-    path: ["/balances"],
-    exact: true,
-  },
-  {
-    component: TradePage(Transfers, []),
-    accessRoles: [],
-    path: ["/transfers-scan"],
-    exact: true,
-  },
+  // {
+  //   component: TradePage(Balances, []),
+  //   accessRoles: [],
+  //   path: ["/balances"],
+  //   exact: true,
+  // },
+  // {
+  //   component: TradePage(Transfers, []),
+  //   accessRoles: [],
+  //   path: ["/transfers-scan"],
+  //   exact: true,
+  // },
   // {
   //   component: TradePage(NTF, []),
   //   accessRoles: [],
   //   path: ["/ntf"],
   //   exact: true,
   // },
-  {
-    component: TradePage(Vesting, []),
-    accessRoles: [],
-    path: ["/vesting"],
-    exact: true,
-  },
-  {
-    component: TradePage(Staking, []),
-    accessRoles: [],
-    path: ["/staking"],
-    exact: true,
-  },
+  // {
+  //   component: TradePage(Vesting, []),
+  //   accessRoles: [],
+  //   path: ["/vesting"],
+  //   exact: true,
+  // },
+  // {
+  //   component: TradePage(Staking, []),
+  //   accessRoles: [],
+  //   path: ["/staking"],
+  //   exact: true,
+  // },
 
   {
     component: TradePage(TradeCommunity, []),
@@ -104,24 +113,24 @@ export const trade_routes = [
     path: ["/admin-community"],
     exact: true,
   },
-  {
-    component: TradePage(DataHub, []),
-    accessRoles: [],
-    path: ["/data-hub"],
-    exact: true,
-  },
-  {
-    component: TradePage(DataHubAssetDetail, []),
-    accessRoles: [],
-    path: ["/data-hub/asset-detail/:id"],
-    exact: true,
-  },
-  {
-    component: TradePage(Deposit, []),
-    accessRoles: [],
-    path: ["/data-hub/deposit"],
-    exact: true,
-  },
+  // {
+  //   component: TradePage(DataHub, []),
+  //   accessRoles: [],
+  //   path: ["/data-hub"],
+  //   exact: true,
+  // },
+  // {
+  //   component: TradePage(DataHubAssetDetail, []),
+  //   accessRoles: [],
+  //   path: ["/data-hub/asset-detail/:id"],
+  //   exact: true,
+  // },
+  // {
+  //   component: TradePage(Deposit, []),
+  //   accessRoles: [],
+  //   path: ["/data-hub/deposit"],
+  //   exact: true,
+  // },
   {
     component: TradePage(Profile, []),
     accessRoles: [],
@@ -140,11 +149,11 @@ export const trade_routes = [
   //   path: ["/data-hub/profile/dashboard"],
   //   exact: true,
   // },
-  {
-    component: TradePage(AiDemoPage, []),
-    accessRoles: [],
-    path: ["/data-hub/ai-demo-page"],
-  },
+  // {
+  //   component: TradePage(AiDemoPage, []),
+  //   accessRoles: [],
+  //   path: ["/data-hub/ai-demo-page"],
+  // },
   {
     component: TradePage(TokenManagement, []),
     accessRoles: [],

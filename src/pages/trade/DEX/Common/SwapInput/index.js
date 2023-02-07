@@ -1,42 +1,34 @@
 import React from "react";
 import CurrencyInput from "react-currency-input-field";
 import { useSelector } from "react-redux";
-import { StakeAmountContainerWrapper } from "./styled";
+import { SwapInputWrapper } from "./styled";
 
-export default function StakeAmountContainer(
+export default function SwapInput(
   {
     // setState,
     // state,
   }
 ) {
   // const [state, setState] = useCustomState({});
-  const balance = 123;
+  const balance = 40000;
   // console.log(state.amount, "amount");
   return (
-    <StakeAmountContainerWrapper
+    <SwapInputWrapper
     // current={state.current}
     >
       <div className="stake-amount-container">
-        <div className="title">Stake amount</div>
+        {/* <div className="title">Stake amount</div> */}
         <div className="input-container">
           <div className="info-balance">
-            <div className="info-container">
-              <div className="icon-container">
-                <img src={require("@images/icon-ivi.png")} />
-                <span className="text">
-                  {`${process.env.REACT_APP_STABLE_TOKEN_SYMBOL}`}
-                </span>
-              </div>
-              <div
-                onClick={() => {
-                  // if (state.current !== 1) {
-                  // setState({ amount: balance });
-                  // }
-                }}
-                className="max"
-              >
-                Max
-              </div>
+            <div className="stake-icon-container">
+              <img src={require("@images/icon-ivi.png")} />
+              <span className="text">
+                {`${process.env.REACT_APP_STABLE_TOKEN_SYMBOL}`}
+              </span>
+              <img
+                className="icon-down-arrow"
+                src={require("@assets/images/dex/down-arrow.png")}
+              />
             </div>
             <div className="balance">Balance: {balance.formatCurrency()}</div>
           </div>
@@ -62,6 +54,6 @@ export default function StakeAmountContainer(
           />
         </div>
       </div>
-    </StakeAmountContainerWrapper>
+    </SwapInputWrapper>
   );
 }
