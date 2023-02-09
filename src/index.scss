@@ -215,6 +215,10 @@ code {
 .d-flex {
   display: flex;
 }
+.pointer {
+  cursor: pointer;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -387,6 +391,12 @@ code {
 
 .mt-4 {
   margin-top: 16px;
+}
+.mt-5 {
+  margin-top: 20px;
+}
+.mt-6 {
+  margin-top: 24x;
 }
 .mt-7 {
   margin-top: 28px;
@@ -633,6 +643,12 @@ code {
 .ant-select-item-option-content {
   display: flex;
   justify-content: space-between;
+}
+.common-bold-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #6e6e6e;
 }
 @import "@layouts/trade/header/AccountPanel.scss";
 

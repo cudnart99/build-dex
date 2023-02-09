@@ -54,7 +54,7 @@ export const SwapInputWrapper = styled.div`
         display: flex;
         margin-bottom: 10px;
         .stake-icon-container {
-          width: 40%;
+          width: 35%;
           display: flex;
           padding: 1px;
           background: #f4f4f4;
@@ -87,7 +87,7 @@ export const SwapInputWrapper = styled.div`
           font-weight: 500;
           font-size: 12px;
           line-height: 18px;
-          width: 60%;
+          width: 65%;
         }
       }
     }
