@@ -219,6 +219,15 @@ code {
   cursor: pointer;
 }
 
+.common-icon {
+  cursor: pointer;
+  text-align: center;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }

@@ -33,6 +33,7 @@ const ERC20Management = React.lazy(() =>
 /**--------------- */
 /* DEX demo route */
 const Swap = React.lazy(() => import("@pages/trade/DEX/Swap"));
+const Liquidity = React.lazy(() => import("@pages/trade/DEX/Liquidity"));
 
 const TradePage = (Component) => (props) => {
   return (
@@ -49,6 +50,12 @@ export const trade_routes = [
     component: TradePage(Swap, []),
     accessRoles: [],
     path: ["/swap"],
+    exact: true,
+  },
+  {
+    component: TradePage(Liquidity, []),
+    accessRoles: [],
+    path: ["/liquidity"],
     exact: true,
   },
   {
