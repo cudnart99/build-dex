@@ -94,6 +94,10 @@ export default function Settings({ state, setState }) {
                 </div>
               );
             })}
+            <div className="manual-input" onClick={() => setSelectedSlip(-1)}>
+              <InputCommon type="setting" />
+              <span className="rate-icon">%</span>
+            </div>
           </div>
         </StyledWrapper>
       }

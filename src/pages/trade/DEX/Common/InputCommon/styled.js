@@ -12,5 +12,10 @@ export const InputCommonWrapper = styled.div`
       font-size: 16px;
       line-height: 26px;
     }
+    .setting {
+      padding-right: 22px;
+      width: 80px;
+      height: 29px;
+    }
   }
 `;

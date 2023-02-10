@@ -8,6 +8,17 @@ export const StyledWrapper = styled.div`
     height: 20px;
   }
   .common-token-container {
+    .manual-input {
+      position: relative;
+      display: inline-block;
+      .rate-icon {
+        position: absolute;
+        top: 2px;
+        right: 5px;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
     .button-token {
       border: 1px solid #c6c6c6;
       border-radius: 20px;
