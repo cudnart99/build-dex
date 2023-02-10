@@ -16,7 +16,7 @@ export default function Liquidity() {
         callback={() => {}}
         subTitle={"Remove liquidity to receive tokens back"}
         buttonName={"Add Liquidity"}
-        content={<>test</>}
+        content={<>hello123</>}
       />
     </StyledWrapper>
   );
