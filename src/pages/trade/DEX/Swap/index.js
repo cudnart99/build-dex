@@ -9,7 +9,7 @@ import styled from "styled-components";
 import { set } from "lodash";
 import moment from "moment";
 import Chart from "./Chart";
-import SelectTokenModal from "./SelectTokenModal";
+import SelectTokenModal from "../Common/SelectTokenModal";
 import Settings from "./Settings";
 
 // const ChartWrapper = styled.div`

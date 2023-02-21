@@ -5,7 +5,7 @@ export const StyledWrapper = styled.div`
     color: #ffffff;
     font-weight: 500;
     font-size: 14px;
-    width: 500px;
+    width: ${(props) => props?.width};
     background: linear-gradient(
       111.68deg,
       rgba(49, 56, 94, 0.29) 7.59%,
@@ -13,19 +13,19 @@ export const StyledWrapper = styled.div`
     );
     backdrop-filter: blur(11px);
     border-radius: 20px;
-    height: 500px;
     margin: auto;
     padding: 20px;
+    line-height: 18px;
     .header {
+      justify-content: space-between;
       .title {
-        width: 80%;
         font-weight: 700;
         font-size: 20px;
         line-height: 22px;
         color: #ffffff;
       }
       .clock {
-        width: 10%;
+        width: 30px;
         text-align: end;
         img {
           width: 21px;
@@ -33,7 +33,8 @@ export const StyledWrapper = styled.div`
         }
       }
       .setting {
-        width: 10%;
+        margin-top: -2px;
+        width: 30px;
         text-align: end;
       }
     }
@@ -45,17 +46,16 @@ export const StyledWrapper = styled.div`
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    width: 90%;
+    width: ${(props) => (props?.fullSizeButton ? "100%" : "70%")};
     height: 50px;
     margin: auto;
     text-align: center;
     background: radial-gradient(
-        96.92% 1534.99% at 95.38% 91.84%,
-        #915fcd 7.32%,
-        #ae5297 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    border-radius: 20px;
+      96.92% 1534.99% at 95.38% 91.84%,
+      #915fcd 7.32%,
+      #ae5297 100%
+    );
+    border-radius: 30px;
   }
 
   .button-liquidity:hover {

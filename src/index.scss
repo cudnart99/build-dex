@@ -248,6 +248,27 @@ code {
   flex-wrap: nowrap;
 }
 
+// .fw-700 {
+//   font-weight: 700;
+// }
+// .fw-500 {
+//   font-weight: 500;
+// }
+// .fw-400 {
+//   font-weight: 400;
+// }
+@for $i from 1 through 10 {
+  .fs-#{$i*2} {
+    font-size: $i * 2px;
+  }
+}
+
+@for $i from 1 through 7 {
+  .fw-#{$i}00 {
+    font-weight: $i * 100;
+  }
+}
+
 .justify-content-space-between {
   justify-content: space-between;
 }
@@ -401,14 +422,25 @@ code {
 .mt-4 {
   margin-top: 16px;
 }
+
 .mt-5 {
   margin-top: 20px;
 }
+
 .mt-6 {
   margin-top: 24x;
 }
+
 .mt-7 {
   margin-top: 28px;
+}
+
+.mt-8 {
+  margin-top: 32px;
+}
+
+.mt-9 {
+  margin-top: 36px;
 }
 
 .mt-10 {
@@ -429,6 +461,24 @@ code {
 
 .mb-4 {
   margin-bottom: 16px;
+}
+.mb-5 {
+  margin-bottom: 20px;
+}
+.mb-6 {
+  margin-bottom: 24px;
+}
+.mb-7 {
+  margin-bottom: 28px;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.mb-9 {
+  margin-bottom: 36px;
+}
+.mb-10 {
+  margin-bottom: 40px;
 }
 
 .ml-2 {

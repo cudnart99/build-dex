@@ -1,23 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { StyledWrapper } from "./styled";
-import LinearText from "@pages/trade/components/LinearText";
 import useDebounceWindowResize from "@hook/useDebounceWindowResize";
-import BaseLiquidity from "../Common/BaseLiquidity";
+import YourLiquidity from "./YourLiquidity";
+import useCustomState from "@hook/useCustomState";
+import ImportPool from "./ImportPool";
+import CreateNewPair from "./CreateNewPair";
+import AddLiquidity from "./AddLiquidity";
 
 export default function Liquidity() {
   const { width } = useDebounceWindowResize();
+  const [state, setState] = useCustomState({
+    page: "YourLiquidity",
+    openSelectTokenModal: false,
+  });
   useEffect(() => {
     console.log(width, "width");
-  }, [width]);
+    console.log(state?.page, "page");
+  }, [state, width]);
   return (
     <StyledWrapper>
-      <BaseLiquidity
-        title={"Your Liquidity"}
-        callback={() => {}}
-        subTitle={"Remove liquidity to receive tokens back"}
-        buttonName={"Add Liquidity"}
-        content={<>hello123</>}
-      />
+      {state?.page == "YourLiquidity" && (
+        <YourLiquidity state={state} setState={setState} />
+      )}
+      {state?.page == "ImportPool" && (
+        <ImportPool state={state} setState={setState} />
+      )}
+      {state?.page == "CreateNewPair" && (
+        <CreateNewPair state={state} setState={setState} />
+      )}
+      {state?.page == "AddLiquidity" && (
+        <AddLiquidity state={state} setState={setState} />
+      )}
     </StyledWrapper>
   );
 }
