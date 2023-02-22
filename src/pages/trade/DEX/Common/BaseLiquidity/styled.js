@@ -40,6 +40,7 @@ export const StyledWrapper = styled.div`
     }
   }
   .button-liquidity {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;

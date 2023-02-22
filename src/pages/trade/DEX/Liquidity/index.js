@@ -5,6 +5,8 @@ import YourLiquidity from "./YourLiquidity";
 import useCustomState from "@hook/useCustomState";
 import ImportPool from "./ImportPool";
 import CreateNewPair from "./CreateNewPair";
+import AddLiquidityEntry from "./AddLiquidityEntry";
+import RemoveLiquidity from "./RemoveLiquidity";
 import AddLiquidity from "./AddLiquidity";
 
 export default function Liquidity() {
@@ -27,6 +29,12 @@ export default function Liquidity() {
       )}
       {state?.page == "CreateNewPair" && (
         <CreateNewPair state={state} setState={setState} />
+      )}
+      {state?.page == "AddLiquidityEntry" && (
+        <AddLiquidityEntry state={state} setState={setState} />
+      )}
+      {state?.page == "RemoveLiquidity" && (
+        <RemoveLiquidity state={state} setState={setState} />
       )}
       {state?.page == "AddLiquidity" && (
         <AddLiquidity state={state} setState={setState} />

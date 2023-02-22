@@ -1,25 +1,17 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  .instruction {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+  .caution {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(198, 198, 198, 0.2);
+    padding: 15px 20px;
+    border-radius: 10px;
   }
   .plus {
-    /* width: 5%; */
-    padding-top: 20px;
-  }
-  .pair {
-    width: 45%;
-  }
-  .reward {
-    padding-bottom:10px;
-    border-bottom: 0.5px solid #c6c6c6;
+    text-align: center;
+    font-size: 25px;
   }
 `;
 export const AddLiquidityWrapper = styled.div`

@@ -10,7 +10,7 @@ import { set } from "lodash";
 import moment from "moment";
 import Chart from "./Chart";
 import SelectTokenModal from "../Common/SelectTokenModal";
-import Settings from "./Settings";
+import Settings from "../Common/Settings";
 
 // const ChartWrapper = styled.div`
 //   display: ${(props) => (props.appearChart ? "initial" : "none")};

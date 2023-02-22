@@ -10,14 +10,14 @@ export default function YourLiquidity({ state, setState }) {
   useEffect(() => {
     console.log(width, "width");
   }, [width]);
-  const [test, setTest] = useState(true);
+  const [test, setTest] = useState(false);
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(false);
   return (
     <BaseLiquidity
       width={"400px"}
       title={"Your Liquidity"}
-      callbackButton={() => {}}
+      callbackButton={() => setState({ page: "AddLiquidityEntry" })}
       subTitle={"Remove liquidity to receive tokens back"}
       buttonName={"Add Liquidity"}
       content={
@@ -91,7 +91,12 @@ export default function YourLiquidity({ state, setState }) {
                       <div className="key">Pooled IHI</div>
                       <div className="value">0.2468</div>
                     </div>
-                    <div className="link text-center">Remove</div>
+                    <div
+                      className="link text-center"
+                      onClick={() => setState({ page: "RemoveLiquidity" })}
+                    >
+                      Remove
+                    </div>
                     <div className="instead text-center">
                       + Add liquidity instead
                     </div>

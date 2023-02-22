@@ -56,7 +56,7 @@ export default function ImportPool({ state, setState }) {
                   You don't have liquidity in this pair yet.
                 </div>
                 <div
-                  onClick={() => setState({ page: "AddLiquidity" })}
+                  onClick={() => setState({ page: "AddLiquidityEntry" })}
                   className="button-liquidity pointer"
                 >
                   Add Liquidity

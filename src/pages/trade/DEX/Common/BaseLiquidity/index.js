@@ -1,7 +1,8 @@
 import React from "react";
 import { StyledWrapper } from "./styled";
-import Settings from "../../Swap/Settings";
+import Settings from "../Settings";
 import useCustomState from "@hook/useCustomState";
+import RecentTrans from "../RecentTrans";
 
 export default function BaseLiquidity({
   width,
@@ -17,6 +18,7 @@ export default function BaseLiquidity({
 }) {
   const [state, setState] = useCustomState({
     openSettingsModal: false,
+    openRecentTransModal: false,
   });
   return (
     <StyledWrapper width={width} fullSizeButton={fullSizeButton}>
@@ -41,7 +43,10 @@ export default function BaseLiquidity({
             >
               <img src={require("@assets/images/dex/setting.png")}></img>
             </div>
-            <div className="common-icon clock">
+            <div
+              className="common-icon clock"
+              onClick={() => setState({ openRecentTransModal: true })}
+            >
               <img src={require("@assets/images/dex/Clock.png")}></img>
             </div>
           </div>
@@ -58,6 +63,7 @@ export default function BaseLiquidity({
         )}
       </div>
       <Settings state={state} setState={setState} />
+      <RecentTrans state={state} setState={setState} />
     </StyledWrapper>
   );
 }

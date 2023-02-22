@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import BaseModal from "../../Common/BaseModal";
-import InputCommon from "../../Common/InputCommon";
+import BaseModal from "../BaseModal";
+import InputCommon from "../InputCommon";
 import { StyledWrapper } from "./styled";
 
 export default function Settings({ state, setState }) {
