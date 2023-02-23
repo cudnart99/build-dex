@@ -12,64 +12,62 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-export default function Chart() {
+export default function Chart({ state, setState }) {
   const { width } = useDebounceWindowResize();
-  // useEffect(() => {
-  //   console.log(width, "width");
-  // }, [width]);
-  const [state, setState] = useCustomState({
-    appearChart: true,
-    selected: 0,
-  });
+  useEffect(() => {
+    setState({
+      pricePair: data[data.length - 1]?.price,
+    });
+  }, []);
   const data = [
     {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+      time: "7:00 PM",
+      price: 0.051,
     },
     {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+      time: "8:00 PM",
+      price: 0.067,
     },
     {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
+      time: "9:00 PM",
+      price: 0.056,
     },
     {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+      time: "10:00 PM",
+      price: 0.061,
     },
     {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
+      time: "11:00 PM",
+      price: 0.062,
     },
     {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
+      time: "12:00 PM",
+      price: 0.067,
     },
     {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
+      time: "1:00 AM",
+      price: 0.07,
     },
   ];
+
+  const customMouseOver = (e) => {
+    console.log(e, "helo123");
+  };
 
   return (
     <StyledWrapper>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
+          onMouseMove={(e) => {
+            if (e.isTooltipActive) {
+              setState({ pricePair: e?.activePayload[0]?.value });
+            }
+          }}
+          onMouseLeave={(e) => {
+            if (!e.isTooltipActive) {
+              setState({ pricePair: data[data.length - 1]?.price });
+            }
+          }}
           width={500}
           height={400}
           data={data}
@@ -95,12 +93,12 @@ export default function Chart() {
             </linearGradient>
           </defs>
           {/* <CartesianGrid strokeDasharray="3 3" /> */}
-          <XAxis dataKey="name" stroke="white" />
-          <YAxis stroke="white" />
+          <XAxis dataKey="time" stroke="white" />
+          <YAxis dataKey="price" stroke="white" />
           <Tooltip />
           <Area
             type="monotone"
-            dataKey="uv"
+            dataKey="price"
             strokeWidth={3}
             stroke="#00895C"
             fill="url(#grad1)"

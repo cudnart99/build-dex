@@ -78,13 +78,13 @@ export default function Swap() {
               </div>
             </div>
             <div className="price">
-              <span className="coin-price">0.007</span>
+              <span className="coin-price">{state?.pricePair}</span>
               <span className="name-pair-coin">BNB/IVI</span>
               <span className="rate">+0.650 (0.84%)</span>
             </div>
             <div className="date">{moment().format("llll")}</div>
 
-            <Chart />
+            <Chart state={state} setState={setState} />
           </div>
         )}
 
