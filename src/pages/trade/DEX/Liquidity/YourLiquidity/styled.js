@@ -14,7 +14,7 @@ export const StyledWrapper = styled.div`
   .test {
     position: absolute;
     top: 0;
-    left: -200px;
+    left: -250px;
   }
   .liquidity-pair {
     border: 1px solid #6e6e6e;

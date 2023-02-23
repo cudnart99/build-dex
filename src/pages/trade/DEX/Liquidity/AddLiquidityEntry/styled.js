@@ -21,31 +21,6 @@ export const StyledWrapper = styled.div`
     padding-bottom: 10px;
     border-bottom: 0.5px solid #c6c6c6;
   }
-  .sub-text-box {
-    position: absolute;
-    bottom: -130px;
-    left: 0;
-    background: linear-gradient(
-      111.68deg,
-      rgba(49, 56, 94, 0.29) 7.59%,
-      rgba(2, 9, 45, 0.39) 102.04%
-    );
-    backdrop-filter: blur(11px);
-    border-radius: 20px;
-    margin: auto;
-    padding: 20px;
-    .icon {
-      display: inline-block;
-      margin-right: 8px;
-      width: 20px;
-      height: 20px;
-    }
-  }
-  .test {
-    position: absolute;
-    bottom: -170px;
-    left: 0;
-  }
 `;
 export const AddLiquidityEntryWrapper = styled.div`
   margin: 0px 5%;
@@ -58,5 +33,30 @@ export const AddLiquidityEntryWrapper = styled.div`
   .main-part {
     margin: auto;
     width: 30%;
+  }
+  .test {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+  }
+`;
+
+export const SubTextBoxWrapper = styled.div`
+  margin-top: 20px;
+  color: white;
+  background: linear-gradient(
+    111.68deg,
+    rgba(49, 56, 94, 0.29) 7.59%,
+    rgba(2, 9, 45, 0.39) 102.04%
+  );
+  backdrop-filter: blur(11px);
+  border-radius: 20px;
+  /* margin: auto; */
+  padding: 20px;
+  .icon {
+    display: inline-block;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
   }
 `;

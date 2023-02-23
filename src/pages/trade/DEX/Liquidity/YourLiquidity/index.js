@@ -128,7 +128,7 @@ export default function YourLiquidity({ state, setState }) {
               setTest(!test);
             }}
           >
-            Liquidity ?
+            Đã có pair hoặc chưa có pair
           </Button>
         </StyledWrapper>
       }
