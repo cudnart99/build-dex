@@ -18,7 +18,7 @@ export default function AddLiquidity({ state, setState }) {
         <BaseLiquidity
           arrowBack={true}
           width={"100%"}
-          title={"IVI - IHI VP"}
+          title={"IVI - IHI LP"}
           allowButton={false}
           // callbackButton={() => {}}
           subTitle={"Receive LP tokens and earn 0.2% trading fees"}

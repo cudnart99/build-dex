@@ -11,19 +11,15 @@ export default function RecentTrans({ state, setState }) {
   };
 
   const listTransactions = [
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
-    { name: "BSCscan Add 1000 USDT & 3029 IVI " },
+    { name: "Add 1000 USDT & 3029 IVI" },
+    { name: "Add 1000 USDT & 3029 IVI" },
+    { name: "Add 1000 USDT & 3029 IVI" },
+    { name: "Add 1000 USDT & 3029 IVI" },
+    { name: "Add 1000 USDT & 3029 IVI" },
+    { name: "Add 1000 USDT & 3029 IVI" },
+    { name: "Add 1000 USDT & 3029 IVI" },
+    { name: "Add 1000 USDT & 3029 IVI" },
+    { name: "Add 1000 USDT & 3029 IVI" },
   ];
 
   return (
@@ -44,7 +40,9 @@ export default function RecentTrans({ state, setState }) {
                     className="icon"
                     src={require("@images/dex/box-transactions.png")}
                   ></img>
-                  <span>{item.name}</span>
+                  <a href="https://bscscan.com/" target="_blank">
+                    {item.name}
+                  </a>
                 </div>
               );
             })}

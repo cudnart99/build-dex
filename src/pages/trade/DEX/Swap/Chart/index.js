@@ -65,18 +65,6 @@ export default function Chart() {
       amt: 2100,
     },
   ];
-  const DEFAULT_COLOR = {
-    x1: "0",
-    y1: "0",
-    x2: "0",
-    y2: "1",
-    offset1: "100%",
-    stopColor1: "#969494",
-    stopOpacity1: "0.4",
-    offset2: "100%",
-    stopColor2: "#BEBEBE",
-    stopOpacity2: "0.4",
-  };
 
   return (
     <StyledWrapper>
