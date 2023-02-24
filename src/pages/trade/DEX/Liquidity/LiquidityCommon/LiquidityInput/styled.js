@@ -57,6 +57,54 @@ export const LiquidityInputWrapper = styled.div`
         display: flex;
         justify-content: space-between;
         /* margin-bottom: 10px; */
+        padding: 1px;
+        .img-container {
+          display: flex;
+          align-items: center;
+          .icon {
+            width: 20px;
+            height: 20px;
+            margin: 0px 5px 0px 5px;
+            display: inline-block;
+          }
+          .nest {
+            margin-left: -10px;
+          }
+          .icon-copy {
+            width: 14.5px;
+            height: 18.75px;
+          }
+          .text {
+            font-weight: 500;
+            font-size: 16px;
+            color: black;
+            display: inline-block;
+            margin: 0px 5px;
+          }
+        }
+        .checkbox {
+          border-radius: 20px;
+          border: 1px solid #6e6e6e;
+          border-radius: 5px;
+          width: 20px;
+          height: 20px;
+          margin-top: 5px;
+        }
+        .checkbox-check {
+          border-radius: 20px;
+          background: #6e5ac3;
+          border-radius: 5px;
+          width: 20px;
+          height: 20px;
+          margin-top: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 15px;
+            height: 11px;
+          }
+        }
         .stake-icon-container {
           /* width: 35%; */
           display: flex;
@@ -75,7 +123,7 @@ export const LiquidityInputWrapper = styled.div`
             font-size: 16px;
             display: inline-block;
             color: black;
-            margin: 4px 6px 0px 6px;
+            margin: 4px 3px 0px 3px;
           }
           .icon-copy {
             width: 14.5px;

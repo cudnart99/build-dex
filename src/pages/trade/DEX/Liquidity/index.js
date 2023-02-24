@@ -12,7 +12,7 @@ import AddLiquidity from "./AddLiquidity";
 export default function Liquidity() {
   const { width } = useDebounceWindowResize();
   const [state, setState] = useCustomState({
-    page: "YourLiquidity",
+    page: "RemoveLiquidity",
     openSelectTokenModal: false,
   });
   useEffect(() => {

@@ -8,6 +8,8 @@ import BaseSelect from "../../Common/BaseSelect";
 import LPInWallet from "../LiquidityCommon/LPInWallet";
 import SelectTokenModal from "../../Common/SelectTokenModal";
 import LiquidityInput from "../LiquidityCommon/LiquidityInput";
+import Detailed from "./detailed";
+import Simple from "./simple";
 
 export default function RemoveLiquidity({ state, setState }) {
   const { width } = useDebounceWindowResize();
@@ -18,12 +20,15 @@ export default function RemoveLiquidity({ state, setState }) {
     setState({
       selectedNameToken1: "IVI",
       selectedImgToken1: require("@images/dex/IVI_icon.png"),
+      priceToken1: "2",
       receiveToken1: "0.24444 (50%)",
       selectedNameToken2: "IHI",
       selectedImgToken2: require("@images/dex/IHI_icon.png"),
+      priceToken2: "0.5",
       receiveToken2: "0.24444 (50%)",
     });
   }, []);
+  const [changeType, setChangeType] = useState(false);
   return (
     <RemoveLiquidityWrapper>
       <div className="left-part">
@@ -41,41 +46,18 @@ export default function RemoveLiquidity({ state, setState }) {
             <StyledWrapper>
               <div className="d-flex justify-content-space-between mt-3 title">
                 <div className="fw-500 fs-16">AMOUNT</div>
-                <div className="fw-400 fs-14">Detailed</div>
-              </div>
-              <LiquidityInput state={state} setState={setState} type={1} />
-              <div className="d-flex justify-content-space-between mt-3 mid-container">
-                <div className="part-container">
-                  <div className="title-part mb-2">RECEIVE</div>
-                  <div className="content-part">
-                    <div className="mb-4">
-                      <img className="icon" src={state.selectedImgToken1}></img>
-                      <span>{state.selectedNameToken1}</span>
-                      <span className="value">{state.receiveToken1}</span>
-                    </div>
-                    <div>
-                      <img className="icon" src={state.selectedImgToken2}></img>
-                      <span>{state.selectedNameToken2}</span>
-                      <span className="value">{state.receiveToken2}</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="part-container">
-                  <div className="title-part mb-2">PRICE</div>
-                  <div className="content-part">
-                    <div className="mb-4">
-                      <img className="icon" src={state.selectedImgToken1}></img>
-                      <span>{state.selectedNameToken1}</span>
-                      <span className="value">{state.receiveToken1}</span>
-                    </div>
-                    <div>
-                      <img className="icon" src={state.selectedImgToken2}></img>
-                      <span>{state.selectedNameToken2}</span>
-                      <span className="value">{state.receiveToken2}</span>
-                    </div>
-                  </div>
+                <div
+                  className="fw-400 fs-14 changeText pointer"
+                  onClick={() => setChangeType(!changeType)}
+                >
+                  {changeType ? "Detailed" : "Simple"}
                 </div>
               </div>
+              {changeType ? (
+                <Simple state={state} setState={setState} />
+              ) : (
+                <Detailed state={state} setState={setState} />
+              )}
               <div className="d-flex justify-content-space-between mt-3 slip">
                 <div className="fw-400 fs-14">Slippage tolerance</div>
                 <div className="fw-700 fs-16">1%</div>
