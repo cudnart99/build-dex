@@ -1,10 +1,10 @@
 import { ListBreadCrumb } from "@constants/breadcrumb";
 import LoadingIndicator from "@layouts/LoadingIndicator";
-import {
-  getFirebaseToken,
-  onMessageListener,
-  requestPermissions,
-} from "@utils/firebase-utils";
+// import {
+//   // getFirebaseToken,
+//   onMessageListener,
+//   requestPermissions,
+// } from "@utils/firebase-utils";
 import { notification } from "antd";
 import { ethers } from "ethers";
 import React, { useEffect } from "react";
@@ -65,21 +65,21 @@ const App = ({
 
   }, [window.location.pathname]);
 
-  useEffect(() => {
-    requestPermissions();
-    getFirebaseToken()
-      .then((res) => {
-        if (address) {
-          createUser({
-            notiToken: res,
-            address: address,
-          });
-        }
-      })
-      .catch((err) => {
-        console.log("Noti token error!", err);
-      });
-  }, [address]);
+  // useEffect(() => {
+  //   requestPermissions();
+  //   getFirebaseToken()
+  //     .then((res) => {
+  //       if (address) {
+  //         createUser({
+  //           notiToken: res,
+  //           address: address,
+  //         });
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       console.log("Noti token error!", err);
+  //     });
+  // }, [address]);
 
   useEffect(() => {
     onMessageListener()
