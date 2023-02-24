@@ -15,11 +15,11 @@ export default function PricesAndShare({ state, setState }) {
           <div className="top-content d-flex">
             <div>
               <div className="text-center mb-2">0.248443</div>
-              <div className="text-center">Token1 per token2</div>
+              <div className="text-center">IVI per IHI</div>
             </div>
             <div>
               <div className="text-center mb-2">0.248443</div>
-              <div className="text-center">Token2 per token1</div>
+              <div className="text-center">IHI per IVI</div>
             </div>
             <div>
               <div className="text-center mb-2">0%</div>
@@ -42,10 +42,7 @@ export default function PricesAndShare({ state, setState }) {
         <div className="button-liquidity supply">Supply</div>
       </div>
       <div className="sub-text mt-5">
-        <img
-          className="icon"
-          src={require("@images/dex/coin-icon.png")}
-        />
+        <img className="icon" src={require("@images/dex/coin-icon.png")} />
         <span>
           By adding liquidity you'll earn 0.2% of all trades on this pair
           proportional to your share in the trading pair. Fees are added to the
