@@ -81,19 +81,19 @@ const App = ({
   //     });
   // }, [address]);
 
-  useEffect(() => {
-    onMessageListener()
-      .then((res) => {
-        notification.open({
-          message: res?.data?.title,
-          description: res?.data?.body,
-        });
-        getNotifications();
-      })
-      .catch((err) => {
-        console.log("noti error", err);
-      });
-  });
+  // useEffect(() => {
+  //   onMessageListener()
+  //     .then((res) => {
+  //       notification.open({
+  //         message: res?.data?.title,
+  //         description: res?.data?.body,
+  //       });
+  //       getNotifications();
+  //     })
+  //     .catch((err) => {
+  //       console.log("noti error", err);
+  //     });
+  // });
 
   return (
     <WrapperStyled>
