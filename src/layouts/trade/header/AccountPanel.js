@@ -67,7 +67,7 @@ export const AccountPanelBody = ({ showDisconect = true, history }) => {
   const { isAdmin, isMasterAdmin } = useSelector((state) => state.consensus);
   return (
     <ul className="list-account-option">
-      {(isAdmin || isMasterAdmin) && (
+      {/* {(isAdmin || isMasterAdmin) && (
         <li className="list-account-option__item">
           <div className="option-icon">
             <UserOutlined />
@@ -86,9 +86,9 @@ export const AccountPanelBody = ({ showDisconect = true, history }) => {
             Account admin information
           </Button>
         </li>
-      )}
+      )} */}
 
-      {AccountPanelStaticItem?.map((item, index) => (
+      {/* {AccountPanelStaticItem?.map((item, index) => (
         <Link
           to={item?.link}
           style={{ display: "flex" }}
@@ -112,8 +112,8 @@ export const AccountPanelBody = ({ showDisconect = true, history }) => {
             </Button>
           </li>
         </Link>
-      ))}
-      <li className="list-account-option__item">
+      ))} */}
+      {/* <li className="list-account-option__item">
         <div className="option-icon">
           <ContainerOutlined />{" "}
         </div>
@@ -131,9 +131,9 @@ export const AccountPanelBody = ({ showDisconect = true, history }) => {
         >
           Token Allocation
         </Button>
-      </li>
+      </li> */}
 
-      <li className="list-account-option__item">
+      {/* <li className="list-account-option__item">
         <div className="option-icon">
           <MoneyReceiveIcon />{" "}
         </div>
@@ -145,7 +145,7 @@ export const AccountPanelBody = ({ showDisconect = true, history }) => {
         >
           Token Management
         </Button>
-      </li>
+      </li> */}
       {showDisconect && (
         <li
           className="list-account-option__item"
@@ -158,7 +158,7 @@ export const AccountPanelBody = ({ showDisconect = true, history }) => {
             <DisconnectOutlined />
           </div>
           <Button className="option-title__onclick">
-            <Link to="/"> Disconnect Account</Link>
+            <Link to="/">Disconnect Account</Link>
           </Button>
         </li>
       )}

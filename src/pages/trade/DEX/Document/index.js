@@ -54,16 +54,11 @@ const Document = (props) => {
     console.log(openDetail, "openDetail");
   }, [openDetail]);
 
-
-
   const items = [
-    getItem(<div>Introduction</div>, "sub1", null),
-    getItem(<div>Protocol Concepts</div>, "sub2", null),
-    getItem(<div>Governance</div>, "sub3", null),
-    getItem(<div>Disclaimer</div>, "sub4", null),
-    getItem(<div>FAQ</div>, "sub5", null),
-    getItem(<div>Privacy Policy</div>, "sub6", null),
-    getItem(<div>Terms of Services</div>, "sub7", null),
+    getItem(<div>Disclaimer</div>, "sub1", null),
+    getItem(<div>FAQ</div>, "sub2", null),
+    getItem(<div>Privacy Policy</div>, "sub3", null),
+    getItem(<div>Terms of Services</div>, "sub4", null),
   ];
   const onClick = (e) => {
     console.log("click ", e);
@@ -83,11 +78,11 @@ const Document = (props) => {
   // };
   return (
     <WrapperStyled>
-      <div className="back-to-head">
+      {/* <div className="back-to-head">
         <a href="#head">
           <img src={require("@images/icon-up.png")} />
         </a>
-      </div>
+      </div> */}
       <div className="menu-icon-container" onClick={handleShowDrawer}>
         <img src={require("@images/menu-icon.png")} />
       </div>
@@ -113,18 +108,12 @@ const Document = (props) => {
         </div>
         <div className="detail">
           {openDetail == "sub1" ? (
-            <div>Introduction</div>
-          ) : openDetail == "sub2" ? (
-            <div>Protocol Concepts</div>
-          ) : openDetail == "sub3" ? (
-            <div>Governance</div>
-          ) : openDetail == "sub4" ? (
             <Disclaimer />
-          ) : openDetail == "sub5" ? (
+          ) : openDetail == "sub2" ? (
             <FAQ />
-          ) : openDetail == "sub6" ? (
+          ) : openDetail == "sub3" ? (
             <PrivacyPolicy />
-          ) : openDetail == "sub7" ? (
+          ) : openDetail == "sub4" ? (
             <Terms />
           ) : (
             <>fail</>

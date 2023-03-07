@@ -25,11 +25,13 @@ const GlobalIcons = () => {
         <Divider opacity={0.2} marginBottom={10} />
         <div className="policy d-flex justify-content-space-between mb-2">
           <div className="text-italic">IVIRSE © 2022</div>
-          <div className="d-flex ">
-            <Link className="text-white" to={"/policy"}>
-              Privacy Policies
+          <div className="d-flex">
+            <Link className="text-white" to={"/document"}>
+              <div>Privacy Policie</div>
             </Link>
-            <div className="pl-4">Terms of Service</div>
+            <Link className="text-white" to={"/document"}>
+              <div className="pl-4 marginTerms">Terms of Service</div>
+            </Link>
           </div>
         </div>
       </div>

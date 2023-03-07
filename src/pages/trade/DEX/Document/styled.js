@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const WrapperStyled = styled.div`
   /* padding: 100px 40px 400px 40px; */
   /* background-color: rgb(86, 11, 177); */
-  padding: 50px 3% 400px 3%;
+  padding: 50px 3% 0px 3%;
   /* background: linear-gradient(116.2deg, #3a1c66 -18.51%, #230537 41.78%); */
   color: white;
   /* width */
@@ -80,8 +80,8 @@ export const WrapperStyled = styled.div`
       }
       .ant-menu,
       .ant-menu-submenu-selected {
-        font-size: 13px;
-        color: gray;
+        font-size: 15px;
+        color: white;
       }
       li.ant-menu-submenu-open
         ul.ant-menu-inline
@@ -112,6 +112,8 @@ export const WrapperStyled = styled.div`
       /* .ant-menu-submenu-selected, */
       li.ant-menu-submenu-open div.ant-menu-submenu-title span.ant-menu-title-content {
         color: white;
+        font-weight: 700;
+        font-size: 18px;
       }
       .ant-menu-item .ant-menu-item-selected .ant-menu-item-only-child {
         font-weight: 600;

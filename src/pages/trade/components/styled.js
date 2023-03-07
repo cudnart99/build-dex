@@ -61,6 +61,9 @@ export const GlobalIconsWrapper = styled.div`
     font-size: 14px;
     line-height: 17px;
   }
+  .marginTerms {
+    margin-top: 2px;
+  }
   @media screen and (max-width: 992px) {
     display: none;
   }
