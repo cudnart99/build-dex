@@ -211,8 +211,17 @@ const DrawerHeader = (props) => {
           <div className="policy d-flex justify-content-space-between mb-2">
             <div className="text-italic">IVIRSE © 2022</div>
             <div className="d-flex-column ">
-              <Link to={"/policy"}>Privacy Policies</Link>
-              <p>Terms of Service</p>
+              <Link className="text-white" to={"/document"}>
+                <div onClick={() => jumpToDocument("sub3")}>Privacy policy</div>
+              </Link>
+              <Link className="text-white" to={"/document"}>
+                <div
+                  onClick={() => jumpToDocument("sub4")}
+                  className="pl-4 marginTerms"
+                >
+                  Terms of Service
+                </div>
+              </Link>
             </div>
           </div>
         </div>

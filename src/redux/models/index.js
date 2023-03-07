@@ -13,6 +13,7 @@ import vesting from "./vesting";
 //java service
 import admin from "./java/admin";
 import notification from "./java/notification";
+import dex from "./dex";
 export {
   auth,
   contracts,
@@ -29,4 +30,5 @@ export {
   //java service
   notification,
   admin,
+  dex,
 };

@@ -16,8 +16,15 @@ import Terms from "./Terms";
 // import TokenMetrics from "./TokenMetrics";
 // import Tokenomics from "./Tokenomics";
 // import OurTeams from "./OurTeams";
+import { useSelector } from "react-redux";
 
 const Document = (props) => {
+  const allState = useSelector((state) => state);
+  console.log(
+    "%cAllState",
+    "background: red; color: yellow; font-size: 20px",
+    allState
+  );
   // const rootSubmenuKeys = ["sub1", "sub2", "sub3", "sub4"];
   const [openDrawer, setOpenDrawer] = useState(false);
   const showDrawer = () => {
@@ -34,7 +41,7 @@ const Document = (props) => {
     setOpenDrawer(false);
   };
   // const [openKeys, setOpenKeys] = useState(["sub1"]);
-  const [openDetail, setOpenDetail] = useState("sub4");
+  const [openDetail, setOpenDetail] = useState(allState?.dex?.activeTabDoc);
   function getItem(label, key, icon, children, type) {
     return {
       key,

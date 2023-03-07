@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { Divider } from "../vesting/components/styled";
 import { IconData } from "./constants";
 import { GlobalIconsWrapper } from "./styled";
+import { useDispatch } from "react-redux";
 
 const GlobalIcons = () => {
+  const jumpToDocument = useDispatch()?.dex?.jumpToDocument;
   return (
     <GlobalIconsWrapper>
       <div
@@ -27,10 +29,15 @@ const GlobalIcons = () => {
           <div className="text-italic">IVIRSE © 2022</div>
           <div className="d-flex">
             <Link className="text-white" to={"/document"}>
-              <div>Privacy Policie</div>
+              <div onClick={() => jumpToDocument("sub3")}>Privacy policy</div>
             </Link>
             <Link className="text-white" to={"/document"}>
-              <div className="pl-4 marginTerms">Terms of Service</div>
+              <div
+                onClick={() => jumpToDocument("sub4")}
+                className="pl-4 marginTerms"
+              >
+                Terms of Service
+              </div>
             </Link>
           </div>
         </div>
